@@ -12,16 +12,16 @@ public class Main {
         String name = scanner.nextLine();
 
         System.out.print("How many hours have you worked? " );
-        double hasWorked = scanner.nextDouble();
+        double hoursWorked = scanner.nextDouble();
 
         System.out.print("What is your pay rate? ");
         double payRate = scanner.nextDouble();
 
         System.out.println("Calculating......");
 
-        double grossPay = hasWorked * payRate;
+        double grossPay = hoursWorked * payRate;
 
-        System.out.println(name + ", your gross pay is $" + grossPay);
+        System.out.printf("%s, your gross pay is $%.2f%n", name, grossPay);
 
 
 
