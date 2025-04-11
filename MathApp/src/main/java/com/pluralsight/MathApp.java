@@ -58,7 +58,6 @@ public class MathApp {
         System.out.println("The random number is " + randomNumber);
 
 
-
         // Print the result
 
 
