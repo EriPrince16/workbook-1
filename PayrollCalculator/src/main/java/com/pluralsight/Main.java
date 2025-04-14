@@ -21,7 +21,14 @@ public class Main {
 
         double grossPay = hoursWorked * payRate;
 
+        double taxRate = 0.20;
+        double taxAmount = grossPay * taxRate;
+        double netPay = grossPay - taxAmount;
+
+        System.out.println(" ");
+
         System.out.printf("%s, your gross pay is $%.2f%n", name, grossPay);
+        System.out.printf("After a %.0f%% tax cut, your pay is $%.2f%n", taxRate * 100, netPay);
 
 
 
